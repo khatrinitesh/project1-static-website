@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0 !important;
+    padding: 0;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  
+  select,textarea,input{
+    outline: none;
+    box-shadow:initial !important;
+  }
+  
+  /*------------- START >> BRAND STYLE GUIDE UI  -------------*/
+  :root {
+    --blackcolor: #000;
+    --whitecolor: #fff;
+    --primarycolor: #fe5000;
+    --secondarycolor: #e0010b; 
+    --triplecolor:#fbbf25;
+    --greycolor1:#6c7778;
+    --greycolor2:#999999;
+    --lightcolor1:#f3f3f3;
+    --lightcolor2:#eaeded;
+    --yellowcolor:#f4e140;
+  
+    /* FONT NAME */
+    --ff_montserrat: 'Montserrat', sans-serif;
+  
+    /* FONT SIZE */
+    --fs_10: 10px;
+    --fs_11: 11px;
+    --fs_12: 12px;
+    --fs_13: 13px;
+    --fs_14: 14px;
+    --fs_15: 15px;
+    --fs_16: 16px;
+    --fs_18: 18px;
+    --fs_20: 20px;
+    --fs_25: 25px;
+    --fs_28: 28px;
+    --fs_30: 30px;
+    --fs_40: 40px;
+    --fs_50: 50px;
+    --fs_70: 70px;
+  
+    /* FONT WEIGHT */
+    --fw_light: 300;
+    --fw_regular: 400;
+    --fw_semibold: 600;
+    --fw_bold: 700;
+    --fw_black: 900;
+  }
+  /*------------- END >> BRAND STYLE GUIDE UI  -------------*/
+
+  body{
+    font-family: var(--ff_montserrat);
+    font-size: var(--fs_16);
+    background-color: var(--whitecolor);
+  }
+
+  /*-------------------- START COMMON CODE  -----------------*/
+  .sectionContent{
+    padding: 50px 0;
+  }
+
+  .btnPrimary{
+    background-color: var(--secondarycolor);
+    color:var(--whitecolor);
+    font-size: var(--fs_12);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    display: inline-block;
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -ms-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+  }
+
+  .btnPrimary:hover{
+    background-color: var(--primarycolor);
+  }
+
+  .sectionTitle{
+    position: relative;
+    margin:0 0 40px;
+  }
+
+  .sectionTitle .headTitle{
+    color:var(--blackcolor);
+    font-size: var(--fs_20);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    padding: 0 0 0 20px;
+  }
+
+  .sectionTitle .headTitle:before{
+    content:"";
+    width: 5px;
+    height: 100%;
+    background-color: var(--primarycolor);
+    position: absolute;
+    left:0;
+  }
+  /*-------------------- END COMMON CODE  -----------------*/
+
+    /*------------------ START SECTION >> CONTACT US ------------------*/
+    .sectionContactUs .innerContactUs{
+        background: url(https://t4.ftcdn.net/jpg/04/95/28/65/360_F_495286577_rpsT2Shmr6g81hOhGXALhxWOfx1vOQBa.jpg) no-repeat center/cover;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .sectionContactUs .innerContactUs .overlayContent{
+        background-color: rgba(0,0,0,.5);
+        padding: 10px;
+    }
+
+    .sectionContactUs .innerContactUs .overlayContent .summaryTitle{
+        color:var(--whitecolor);
+        font-size: var(--fs_20);
+        font-family: var(--ff_montserrat);
+        font-weight: var(--fw_semibold);
+        margin:0 0 10px !important;
+        text-transform: uppercase;
+    }
+
+    .sectionContactUs .innerContactUs .overlayContent .bigHeadTitle{
+        color:var(--whitecolor);
+        font-size: var(--fs_30);
+        font-family: var(--ff_montserrat);
+        font-weight: var(--fw_bold);
+        margin:0 0 10px !important;
+        text-transform: uppercase;
+    }
+
+    .sectionContactUs .innerContactUs .overlayContent .btnContact{
+        padding: 0 20px;
+        background-color: var(--yellowcolor);
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        font-size: var(--fs_14);
+        text-transform: capitalize;
+        font-family: var(--ff_montserrat);
+        font-weight: var(--fw_semibold);
+        color:var(--blackcolor);
+        padding: 0 20px;
+        border-radius: 30px;
+        display: inline-block;
+        text-decoration: none;
+    }
+      /*------------------ END SECTION >> CONTACT US------------------*/
+
+   /*------------------ START SECTION >> NEW PRODUCTS ------------------*/
+   .sectionNewProducts .boxProducts{
+    border:5px solid var(--lightcolor1);
+    padding: 20px;
+    transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -ms-transition:all .3s linear;
+    cursor: pointer;
+}
+
+.sectionNewProducts .boxProducts:hover{
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.sectionNewProducts .boxProducts:hover  .caption .btnView{
+    background-color: var(--primarycolor);
+}
+
+   .sectionNewProducts .boxProducts .thumbnail{
+    max-width: 200px;
+    margin:0 auto 30px;
+   }
+.sectionNewProducts .boxProducts .thumbnail .imgProducts{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sectionNewProducts .boxProducts  .caption .subTitle{
+    font-size: var(--fs_13);
+    font-family: var(--ff_montserrat);
+    color:var(--greycolor1);
+    text-transform: uppercase;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    border-bottom:1px solid var(--lightcolor2);
+    padding:0 0 10px;
+    margin:0 0 10px !important;
+}
+
+.sectionNewProducts .boxProducts  .caption .txtProductNum{
+    border-right: 1px solid var(--lightcolor2);
+    font-size: var(--fs_12);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    color:var(--greycolor1);
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.sectionNewProducts .boxProducts  .caption  .txtPowerTools{
+    font-size: var(--fs_13);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    color:var(--greycolor1);
+}
+
+.sectionNewProducts .boxProducts  .caption .btnView{
+    display: inline-block;
+    background-color: var(--secondarycolor);
+    color:var(--whitecolor);
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    font-size: var(--fs_13);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    text-align: center;
+    text-decoration: none;
+    padding: 0 20px;
+    transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -ms-transition:all .3s linear;
+}
+
+    /*------------------ END SECTION >> NEW PRODUCTS  ------------------*/
+
+
+  /*------------------ START SECTION >> ABOUT FMI ------------------*/
+  .sectionAboutFMI .leftContent .desc{
+    color:var(--blackcolor);
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    line-height: 24px;
+  }
+
+  .sectionAboutFMI .rightContent .imgWallpaper{
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*------------------ START SECTION >> ABOUT FMI ------------------*/
+
+  /*----------------- START FOOTER ----------------*/
+  footer{
+    background-color: var(--blackcolor);
+    padding: 30px 0;
+  }
+  footer .innerFooter .boxFooter .fooHeadTitle{
+    color:var(--primarycolor);
+    font-size: var(--fs_16);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    margin:0 0 15px !important;
+    text-transform: uppercase;
+  }
+
+  footer .innerFooter .boxFooter .listFoot li:not(:last-child),
+  footer .innerFooter .boxFooter .listAddress li:not(:last-child){
+    margin:0 0 10px;
+  }
+
+  footer .innerFooter .boxFooter .listFoot li .linkFoot,
+  footer .innerFooter .boxFooter .listAddress li .linkFoot{
+    color:var(--greycolor2);
+    font-size: var(--fs_13);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    text-decoration: none;
+    line-height: 24px;
+    display: block;
+  }
+
+  footer .innerFooter .boxFooter .listAddress li .linkFoot{
+    display: flex;
+  }
+
+  footer .innerFooter .boxFooter .listAddress li .linkFoot .fa{
+    position: relative;
+    top:7px;
+  }
+
+  footer .innerFooter .boxFooter .listAddress li .linkFoot .txt{
+    margin-left: 10px;
+  }
+  /*----------------- END FOOTER ----------------*/

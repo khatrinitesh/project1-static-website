@@ -129,9 +129,48 @@
   /*-------------------- END COMMON CODE  -----------------*/
 
       /*------------------ START SECTION >> BANNERS ------------------*/
+      .sectionBanner .bannerSlideshow .slick-prev,
+      .sectionBanner .bannerSlideshow .slick-next{
+        opacity: 1;
+        border:2px solid var(--whitecolor);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        z-index: 9;
+      }
+      .sectionBanner .bannerSlideshow .slick-prev{
+        left: 10px;
+      }
+      .sectionBanner .bannerSlideshow .slick-next{
+        right: 10px;
+      }
+      .sectionBanner .bannerSlideshow .slick-arrow:before{
+        font-size: 15px;
+      }
+      .sectionBanner .bannerSlideshow .slick-prev:before{
+        content: '\f053';
+        font-family: 'FontAwesome';
+      }
+      .sectionBanner .bannerSlideshow .slick-next:before{
+        content: '\f054';
+        font-family: 'FontAwesome';
+      }
+      .sectionBanner .bannerSlideshow .slick-dots li button:before{
+        display: none;
+      }
+      .sectionBanner .bannerSlideshow .slick-dots li{
+        width: 20px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: var(--lightcolor2);
+      }
+      .sectionBanner .bannerSlideshow .slick-dots li.slick-active{
+        background-color: var(--primarycolor);
+        width: 30px;
+      }
       .sectionBanner .rightBanner .boxImg .imgWallpaper{
         border-radius: 10px;
-        aspect-ratio: 2/2;
+        aspect-ratio:1/1;
         object-fit: cover;
         width: 100%;
         height: 100%;

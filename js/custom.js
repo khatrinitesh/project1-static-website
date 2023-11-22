@@ -5,10 +5,11 @@ $(document).ready(function(){
     $(function(){
         $('#bannerSlideshow').slick({
             dots: true,
-            infinite: true,
+            infinite: false,
             speed: 300,
             slidesToShow: 1,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            arrows: true
           });
     });
     // END SECTION >> BANNER

@@ -320,3 +320,15 @@
     margin-left: 10px;
   }
   /*----------------- END FOOTER ----------------*/
+
+  /*------------------ START MEDIA QUERIES RESPONSIVE ------------------*/
+  @media (max-width:767px){
+    .sectionContent{
+        padding: 30px 0;
+    }
+    .sectionAboutFMI .leftContent,
+    footer .innerFooter .gridCol:not(:last-child) {
+        margin:0 0 30px;
+    }
+  }
+  /*------------------ END MEDIA QUERIES RESPONSIVE ------------------*/

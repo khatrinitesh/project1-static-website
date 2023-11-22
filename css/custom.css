@@ -128,6 +128,123 @@
   }
   /*-------------------- END COMMON CODE  -----------------*/
 
+      /*------------------ START SECTION >> BANNERS ------------------*/
+      .sectionBanner .rightBanner .boxImg .imgWallpaper{
+        border-radius: 10px;
+        aspect-ratio: 2/2;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      /*------------------ END SECTION >> BANNERS ------------------*/
+
+    /*------------------ START SECTION >> FEATURES ------------------*/
+    .sectionFeature .boxFeature{
+      border:1px solid var(--lightcolor2);
+      padding:20px;
+      box-shadow: inset 0px -35px 15px -3px rgba(0,0,0,0.1);
+      -webkit-box-shadow: inset 0px -35px 15px -3px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset 0px -35px 15px -3px rgba(0,0,0,0.1);
+      -ms-box-shadow: inset 0px -35px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .sectionFeature .boxFeature .leftCol{
+      width: 60%;
+    }
+
+    .sectionFeature .boxFeature .leftCol .subTitle{
+      color:var(--blackcolor);
+      font-size: var(--fs_18);
+      font-family: var(--ff_montserrat);
+      font-weight: var(--fw_semibold);
+      margin:0 0 5px !important;
+    }
+
+    .sectionFeature .boxFeature .leftCol .desc{
+      color:var(--greycolor2);
+      font-size: var(--fs_14);
+      font-family: var(--ff_montserrat);
+      font-weight: var(--fw_semibold);
+      margin:0 0 10px !important;
+    }
+    .sectionFeature .boxFeature .leftCol  .btnFeature{
+      background-color: var(--yellowcolor);
+      border:2px solid var(--blackcolor);
+      text-align: center;
+      padding: 0 20px;
+      height: 30px;
+      line-height: 25px;
+      color:var(--blackcolor);
+      font-size: var(--fs_14);
+      font-family: var(--ff_montserrat);
+      font-weight: var(--fw_semibold);
+      text-align: center;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    .sectionFeature .boxFeature .rightCol{
+      width: calc(100% - 60%);
+    }
+      /*------------------ END SECTION >> FEATURES ------------------*/
+
+  /*------------------ START SECTION >> SERVICES ------------------*/
+  .sectionServices .innerServices{
+    max-width: 800px;
+    margin:0 auto;
+  }
+
+  .sectionServices .innerServices .boxServices .thumbnail{
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sectionServices .innerServices .boxServices .thumbnail .imgWallpaper{
+    aspect-ratio: 3/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sectionServices .innerServices .boxServices .thumbnail:after{
+    content:"";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+  mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+  z-index: 1;
+  }
+
+  .sectionServices .innerServices .boxServices .thumbnail .caption{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 50px;
+    z-index: 9;
+  }
+  .sectionServices .innerServices .boxServices .thumbnail .caption .headTitle{
+    color:var(--whitecolor);
+    font-size: var(--fs_20);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  /*------------------ END SECTION >> SERVICES ------------------*/
+
     /*------------------ START SECTION >> CONTACT US ------------------*/
     .sectionContactUs .innerContactUs{
         background: url(https://t4.ftcdn.net/jpg/04/95/28/65/360_F_495286577_rpsT2Shmr6g81hOhGXALhxWOfx1vOQBa.jpg) no-repeat center/cover;

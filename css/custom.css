@@ -191,7 +191,8 @@
     }
 
     .sectionFeature .boxFeature .leftCol{
-      width: 60%;
+      width: 70%;
+      margin:0 20px 0 0;
     }
 
     .sectionFeature .boxFeature .leftCol .subTitle{
@@ -217,7 +218,7 @@
       height: 30px;
       line-height: 25px;
       color:var(--blackcolor);
-      font-size: var(--fs_14);
+      font-size: var(--fs_13);
       font-family: var(--ff_montserrat);
       font-weight: var(--fw_semibold);
       text-align: center;
@@ -226,7 +227,7 @@
     }
 
     .sectionFeature .boxFeature .rightCol{
-      width: calc(100% - 60%);
+      width: calc(100% - 70%);
     }
       /*------------------ END SECTION >> FEATURES ------------------*/
 

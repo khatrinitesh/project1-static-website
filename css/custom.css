@@ -112,7 +112,7 @@
 
   .sectionTitle .headTitle{
     color:var(--blackcolor);
-    font-size: var(--fs_20);
+    font-size: var(--fs_30);
     font-family: var(--ff_montserrat);
     font-weight: var(--fw_semibold);
     padding: 0 0 0 20px;
@@ -126,6 +126,21 @@
     position: absolute;
     left:0;
   }
+
+  .slick-dots li button:before{
+    display: none;
+  }
+ .slick-dots li{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--lightcolor2);
+  }
+ .slick-dots li.slick-active{
+    background-color: var(--primarycolor);
+    width: 30px;
+  }
+
   /*-------------------- END COMMON CODE  -----------------*/
 
       /*------------------ START SECTION >> BANNERS ------------------*/
@@ -155,19 +170,7 @@
         content: '\f054';
         font-family: 'FontAwesome';
       }
-      .sectionBanner .bannerSlideshow .slick-dots li button:before{
-        display: none;
-      }
-      .sectionBanner .bannerSlideshow .slick-dots li{
-        width: 20px;
-        height: 10px;
-        border-radius: 10px;
-        background-color: var(--lightcolor2);
-      }
-      .sectionBanner .bannerSlideshow .slick-dots li.slick-active{
-        background-color: var(--primarycolor);
-        width: 30px;
-      }
+     
       .sectionBanner .rightBanner .boxImg .imgWallpaper{
         border-radius: 10px;
         aspect-ratio:1/1;
@@ -433,6 +436,75 @@
   }
   /*------------------ START SECTION >> ABOUT FMI ------------------*/
 
+  /*------------------ START SECTION >> CUSTOMER TESTIMONIALS ------------------*/
+  .sectionTestimonials .slideshowTestimonials .slick-slide{
+    padding: 0 10px;
+  }
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials{
+    border:1px solid var(--lightcolor2);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials .desc{
+    color:var(--greycolor1);
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    line-height: 24px;
+    min-height: 100px;
+  }
+
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials .linkUrl{
+    color:var(--primarycolor);
+    font-weight: var(--fw_semibold);
+    text-decoration: none;
+  }
+
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials  .subTitle{
+    color:var(--greycolor1);
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    text-transform: uppercase;
+    margin:0 0 10px !important;
+  }
+
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials .listStarRating li:not(:last-child){
+    margin:0 10px 0 0;
+  } 
+
+  .sectionTestimonials .slideshowTestimonials .boxTestimonials .listStarRating li .fa{
+    color:var(--yellowcolor)
+  }
+
+  .sectionTestimonials .slideshowTestimonials .slick-prev{
+    left:-20px;
+  }
+  .sectionTestimonials .slideshowTestimonials .slick-next{
+    right:-20px;
+  }
+  .sectionTestimonials .slideshowTestimonials .slick-arrow{
+    -webkit-box-shadow:0px 10px 39px 10px rgba(62,66,66,0.22);
+-moz-box-shadow: 0px 10px 39px 10px rgba(62,66,66,0.22);
+box-shadow: 0px 10px 39px 10px rgba(62,66,66,0.22);
+border-radius: 50%;
+background-color: var(--whitecolor);
+opacity: 1;
+width: 50px;
+height: 50px;
+z-index: 9;
+  }
+
+  .sectionTestimonials .slideshowTestimonials .slick-arrow:before{
+    z-index: 99;
+    opacity: 1;
+    color:var(--blackcolor)
+  }
+
+  
+
+  /*------------------ END SECTION >> CUSTOMER TESTIMONIALS  ------------------*/
+
   /*----------------- START FOOTER ----------------*/
   footer{
     background-color: var(--blackcolor);
@@ -478,13 +550,68 @@
   /*----------------- END FOOTER ----------------*/
 
   /*------------------ START MEDIA QUERIES RESPONSIVE ------------------*/
-  @media (max-width:767px){
+  @media (max-width:992px){
+    .sectionBanner .bannerSlideshow {
+      margin:0 0 80px;
+    }
+    .sectionFeature .gridCol:not(:last-child){
+      margin:0 0 20px;
+    }
     .sectionContent{
         padding: 30px 0;
     }
+    .slick-dots{
+      bottom: -40px;
+    }
+
+    .sectionTitle .headTitle{
+      font-size: var(--fs_25);
+    }
+
+  }
+  @media (max-width:767px){
+    
     .sectionAboutFMI .leftContent,
     footer .innerFooter .gridCol:not(:last-child) {
         margin:0 0 30px;
     }
+
+    .sectionBanner .rightBanner .innergridcol:not(:last-child){
+      margin: 0 0 30px;
+    }
+
+    .sectionFeature .boxFeature .leftCol{
+      width: 100%;
+      margin:0 0 20px;
+    }
+
+    .sectionFeature .boxFeature .sectionTitle{
+      margin:0 0 10px;
+    }
+
+    .sectionFeature .boxFeature .rightCol{
+      width: 100%;
+    }
+
+    .sectionServices .innerServices .boxServices .thumbnail{
+      height: auto;
+    }
+   
+    .sectionServices .innerServices .gridCol:not(:last-child){
+      margin:0 0 20px;
+    }
+
+    .sectionContactUs .innerContactUs{
+      padding:10px;
+    }
+
+    .sectionTestimonials .slideshowTestimonials .slick-arrow{
+      display: none !important;
+    }
+
+    .sectionContactUs .innerContactUs .overlayContent .bigHeadTitle{
+      font-size: var(--fs_25);
+    }
+   
   }
   /*------------------ END MEDIA QUERIES RESPONSIVE ------------------*/

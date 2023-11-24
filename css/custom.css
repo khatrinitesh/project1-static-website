@@ -192,6 +192,9 @@
     background-color: var(--primarycolor);
     border:0;
     padding: 10px;
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
   } 
 
   .header .innerHeader .leftSide .searchBox .form-control{

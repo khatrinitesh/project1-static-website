@@ -644,6 +644,9 @@ z-index: 9;
 
   }
   @media (max-width:767px){
+    .header .innerHeader .logo{
+      margin:0 0 10px;
+    }
     .header .innerHeader .btnDealer{
       position: initial;
       transform: initial;

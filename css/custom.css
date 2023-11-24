@@ -143,6 +143,76 @@
 
   /*-------------------- END COMMON CODE  -----------------*/
 
+  /* ------------- START HEADER ---------------*/
+  .header{
+    background-image: linear-gradient(to right, #fe5000, #ff7100, #ff8e00, #fda704, #fbbf25);
+    padding: 10px;
+    position: relative;
+  }
+
+  .header .innerHeader .logo .imgLogo{
+    max-width: 100px;
+  }
+
+  .header .innerHeader .btnDealer{
+    background-color: var(--whitecolor);
+    color: var(--secondarycolor);
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 37px;
+    position: absolute; 
+    border:2px solid var(--secondarycolor);
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    right:2%;
+    text-align: center;
+  }
+
+  .header .innerHeader .leftSide .searchBox {
+    border:2px solid var(--whitecolor);
+    border-radius: 10px;
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .header .innerHeader .leftSide .searchBox .dropdown .btn-secondary{
+    background-color: var(--primarycolor);
+    border:0;
+    padding: 10px;
+  } 
+
+  .header .innerHeader .leftSide .searchBox .form-control{
+    border:2px solid var(--whitecolor);
+    border-radius: 0;
+    padding: 10px 30px 10px 10px;
+    font-size: var(--fs_14);
+    font-family: var(--ff_montserrat);
+    font-weight: var(--fw_semibold);
+  }
+
+  .header .innerHeader .leftSide .searchBox .fa{
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    color:var(--primarycolor);
+    cursor: pointer;
+  }
+  /* ------------- END HEADER ---------------*/
+
       /*------------------ START SECTION >> BANNERS ------------------*/
       .sectionBanner .bannerSlideshow .slick-prev,
       .sectionBanner .bannerSlideshow .slick-next{
@@ -571,6 +641,12 @@ z-index: 9;
 
   }
   @media (max-width:767px){
+    .header .innerHeader .btnDealer{
+      position: initial;
+      transform: initial;
+      margin-top: 10px;
+      width: 100%;
+    }
     
     .sectionAboutFMI .leftContent,
     footer .innerFooter .gridCol:not(:last-child) {

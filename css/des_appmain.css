@@ -150,14 +150,11 @@
 .navbar-inverse .navbar-nav > li > a {
     position: relative;
     color: #333 !important;
-    line-height: 40px;
-    padding: 0 15px;
+    padding: 15px;
     text-decoration: none;
-    height: 40px;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    margin: 10px
 }
 
 #header{
@@ -688,16 +685,9 @@ ul.left-submenu li.hovered a {
 .custom-top-navbar {
     position: relative
 }
-@media (max-width:1429px) {
-    .menu-section {
-        padding: 10px;
-    }
-}
 
 @media (max-width:1200px) {
-    .navbar-inverse .navbar-nav > li > a {
-        padding: 0 20px
-    }
+    
 
 }
 
@@ -710,7 +700,7 @@ ul.left-submenu li.hovered a {
         #header ul li .servicemenu::before, #header ul li .softwaremenu::before {
             color: #333;
             display: inline-block;
-            font-size: 16px
+            font-size: 14px
         }
 
         #header ul li .servicemenu::before {
@@ -1029,7 +1019,12 @@ ul.left-submenu li.hovered a {
         top: 60px;
         height: 0;
         -webkit-box-shadow: 2px 1px 2px 0 rgba(158,157,157,.5);
-        box-shadow: 2px 1px 2px 0 rgba(158,157,157,.5)
+        box-shadow: 2px 1px 2px 0 rgba(158,157,157,.5);
+        display:none;
+    }
+
+    #slide-nav #header.slide-active{
+        display:block;
     }
 
         #slide-nav #header .navbar-nav {
@@ -1093,6 +1088,8 @@ ul.left-submenu li.hovered a {
 }
 
 @media (max-width:767px) {
+
+    
     #header ul.navbar-nav li.userli {
         display: block
     }
@@ -31322,7 +31319,6 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
 
 
       #site_header {
-        min-height: 60px;
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
         background: #fff;
         position: relative;
@@ -31346,13 +31342,10 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       .navbar-inverse .navbar-nav > li > a {
         position: relative;
         color: #333 !important;
-        line-height: 40px;
-        padding: 0 15px;
+        padding: 15px;
         text-decoration: none;
-        height: 40px;
         display: block;
-        font-size: 16px;
-        margin: 10px;
+        font-size: 14px;
       }
       #header ul.navbar-nav li.userli {
         display: none;
@@ -31540,7 +31533,6 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
           .allmenu.onlyresearch {
           width: 873px;
           overflow: hidden;
-          left: -229px !important;
           height: 497px;
         }
         .navbar-inverse .navbar-nav li.navbar-nav-li:hover .extra-sub-menu-ul {
@@ -31578,7 +31570,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       }
       @media (min-width: 1280px) and (max-width: 1439px) {
         .navbar-inverse .navbar-nav li.navbar-nav-li:hover .allmenu {
-          left: -170px !important;
+          /* left: -170px !important; */
         }
       }
       #category-menu.left-submenu {
@@ -31595,7 +31587,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       }
       ul.left-submenu > li {
         width: 247px;
-        font-size: 14px;
+        font-size: 12px;
         padding: 3px 0;
       }
       .extra-sub-menu-ul li {
@@ -31711,6 +31703,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
         font-weight: 600;
         color: #3a7af3;
         text-decoration: none;
+        font-size:12px;
       }
       ul.left-submenu > li.vcategory-menu > a::before {
         background: url(https://assets.goodfirms.co/images/new-menu-icons.svg) -296px -82px
@@ -31984,7 +31977,14 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       }
       
       @media (max-width: 1279px) {
+        .menu-container{
+            padding:0 10px;
+        }
         .allmenu.onlyresearch {
           padding: 0;
+        }
+        .navbar-nav > li{
+            display:block !important;
+            width:100%;
         }
       }

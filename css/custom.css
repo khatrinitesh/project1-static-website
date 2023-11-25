@@ -198,12 +198,12 @@
   } 
 
   .header .innerHeader .leftSide .searchBox .form-control{
-    border:2px solid var(--whitecolor);
-    border-radius: 0;
-    padding: 10px 30px 10px 10px;
-    font-size: var(--fs_14);
-    font-family: var(--ff_montserrat);
-    font-weight: var(--fw_semibold);
+    border:2px solid var(--whitecolor) !important;
+    border-radius: 0 !important;
+    padding: 10px 30px 10px 10px !important;
+    font-size: var(--fs_14) !important;
+    font-family: var(--ff_montserrat) !important;
+    font-weight: var(--fw_semibold) !important;
   }
 
   .header .innerHeader .leftSide .searchBox .fa{

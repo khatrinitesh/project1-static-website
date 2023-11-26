@@ -151,7 +151,7 @@
   }
 
   .header .innerHeader .logo .imgLogo{
-    max-width: 80px;
+    max-width:50px;
   }
 
   .header .innerHeader .btnDealer{
@@ -177,7 +177,7 @@
     text-align: center;
   }
 
-  .header .innerHeader .leftSide .searchBox {
+  .header .innerHeader  .searchBox {
     border:2px solid var(--whitecolor);
     border-radius: 10px;
     font-size: var(--fs_14);
@@ -186,27 +186,39 @@
     position: relative;
     max-width: 800px;
     width: 100%;
+    height: 35px;
   }
 
-  .header .innerHeader .leftSide .searchBox .dropdown .btn-secondary{
+  .header .innerHeader  .searchBox .dropdown{
+    height: 100%;
+  }
+
+  .menu-section .navbar-nav > li:not(:last-child){
+    border-right: 1px solid #ccc;;
+  }
+
+  .header .innerHeader  .searchBox .dropdown .btn-secondary{
     background-color: var(--primarycolor);
     border:0;
     padding: 10px;
     font-size: var(--fs_14);
     font-family: var(--ff_montserrat);
     font-weight: var(--fw_semibold);
+    border-radius: 10px 0 0px 10px;
+    height: 100%;
   } 
 
-  .header .innerHeader .leftSide .searchBox .form-control{
+  .header .innerHeader  .searchBox .form-control{
     border:2px solid var(--whitecolor) !important;
     border-radius: 0 !important;
     padding: 10px 30px 10px 10px !important;
     font-size: var(--fs_14) !important;
     font-family: var(--ff_montserrat) !important;
     font-weight: var(--fw_semibold) !important;
+    height: 100%;
   }
 
-  .header .innerHeader .leftSide .searchBox .fa{
+  .header .innerHeader  .searchBox .fa{
     position: absolute;
     top:50%;
     right:10px;
@@ -217,6 +229,16 @@
   /* ------------- END HEADER ---------------*/
 
       /*------------------ START SECTION >> BANNERS ------------------*/
+      .sectionBanner{
+        height: 400px;
+        padding-bottom: 0;
+      }
+      .sectionBanner .bannerSlideshow .imgBanner{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+      }
       .sectionBanner .bannerSlideshow .slick-prev,
       .sectionBanner .bannerSlideshow .slick-next{
         opacity: 1;
@@ -246,11 +268,12 @@
      
       .sectionBanner .rightBanner .boxImg .imgWallpaper{
         border-radius: 10px;
-        aspect-ratio:1/1;
+        aspect-ratio:2/1;
         object-fit: cover;
         width: 100%;
         height: 100%;
       }
+      
       /*------------------ END SECTION >> BANNERS ------------------*/
 
     /*------------------ START SECTION >> FEATURES ------------------*/
@@ -625,6 +648,10 @@ z-index: 9;
 
   /*------------------ START MEDIA QUERIES RESPONSIVE ------------------*/
   @media (max-width:992px){
+    
+    .sectionBanner{
+      height: auto;
+    }
     .sectionBanner .bannerSlideshow {
       margin:0 0 80px;
     }

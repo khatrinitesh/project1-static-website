@@ -127,7 +127,6 @@
 
 
 #site_header {
-    min-height: 60px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
     background: #fff;
     position: fixed;
@@ -704,11 +703,11 @@ ul.left-submenu li.hovered a {
         }
 
         #header ul li .servicemenu::before {
-            content: "Market"
+            content: "POWER TOOLS"
         }
 
         #header ul li .softwaremenu::before {
-            content: "Service"
+            content: "HAND TOOLS"
         }
 
     #header ul li.active .servicemenu::before, #header ul li.active .softwaremenu::before {
@@ -729,13 +728,19 @@ ul.left-submenu li.hovered a {
         cursor: pointer;
         position: relative;
         line-height: 0;
-        float: right;
-        width: 16px;
-        height: 21px;
-        margin: 23px 15px 0 0;
+        width: 30px;
+        height: auto;
         padding: 0;
         border: 0;
-        background: 0 0
+        background: 0 0;
+    }
+
+    #slide-nav .navbar-toggle > .icon-bar:not(:last-child){
+        margin:0 0 8px !important;
+    }
+
+    #slide-nav .navbar-toggle.slide-active > .icon-bar:not(:last-child) {
+        margin:0 !important;
     }
 
         #slide-nav .navbar-toggle > .icon-bar {
@@ -747,13 +752,6 @@ ul.left-submenu li.hovered a {
             background-color: var(--orangecolorone)
         }
 
-        #slide-nav .navbar-toggle.slide-active {
-            margin-top: 18px
-        }
-
-    .bar2 {
-        margin: 4px 0 !important
-    }
 
     .slide-active .bar1 {
         margin: 0 0 0 2px !important;
@@ -866,7 +864,7 @@ ul.left-submenu li.hovered a {
     }
 
     .allmenu.onlyresearch li.vcategory-menu a.vcategory-menu-title {
-        width: 100%
+        width: 100% !important;
     }
 
     .vcategory-inner-arrow {
@@ -877,7 +875,8 @@ ul.left-submenu li.hovered a {
         cursor: pointer;
         border-bottom: 1px solid #e2e2e2;
         text-align: center;
-        margin-top: 1px
+        margin-top: 1px;
+        display:none;
     }
 
         .vcategory-inner-arrow .right-caret {
@@ -997,11 +996,13 @@ ul.left-submenu li.hovered a {
         text-decoration: none !important
     }
 
-    #slide-nav.navbar-inverse .navbar-nav li a, #slide-nav.navbar-inverse .navbar-nav > li > a:hover {
-        line-height: 60px;
+    #slide-nav.navbar-inverse .navbar-nav li a, 
+    #slide-nav.navbar-inverse .navbar-nav > li > a:hover {
+        line-height: 40px;
         height: auto;
         margin: 0;
-        border-radius: 0
+        border-radius: 0;
+        width:100%;
     }
 
     #slide-nav .navbar-header {
@@ -1010,7 +1011,7 @@ ul.left-submenu li.hovered a {
 
     #slide-nav #header {
         left: 0;
-        width: calc(100% + 40px);
+        width:100%;
         min-width: 0;
         position: absolute;
         overflow: hidden;
@@ -1190,17 +1191,10 @@ ul.left-submenu li.hovered a {
         box-shadow: none
     }
 
-    .bar2 {
-        margin: 3px 0 !important
-    }
-
     #slide-nav .navbar-toggle {
-        margin-top: 17px;
+        margin-top: 0;
         margin-right: 0;
-    }
-
-    a.source-logo {
-        margin-top: 15px
+        margin-bottom: 0;
     }
     #mobilecustom_header {
         min-height: 46px
@@ -1224,9 +1218,6 @@ ul.left-submenu li.hovered a {
         font-size: 14px
     }
 
-    #slide-nav .navbar-toggle.slide-active {
-        margin-top: 12px
-    }
 
     #slide-nav #header {
         top: 46px
@@ -31342,10 +31333,15 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       .navbar-inverse .navbar-nav > li > a {
         position: relative;
         color: #333 !important;
-        padding: 15px;
+        padding: 10px 15px;
         text-decoration: none;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height:normal;
         font-size: 14px;
+        text-transform:uppercase;
+        border-radius:0 !important;
       }
       #header ul.navbar-nav li.userli {
         display: none;
@@ -31522,7 +31518,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
           z-index: 10;
           position: absolute;
           left: 0 !important;
-          top: 50px;
+          top: 100%;
           width: 1071px;
           height: 537px;
           overflow: hidden;
@@ -31544,7 +31540,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
           padding: 0;
           margin: 0;
           position: absolute;
-          top: 50px;
+          top: 100%;
           left: 0;
           width: 210px;
           z-index: 10;
@@ -31554,6 +31550,10 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
         .navbar-inverse .navbar-nav > .active > a .caret {
           filter: invert(44%) sepia(30%) saturate(7162%) hue-rotate(207deg)
             brightness(98%) contrast(95%);
+        }
+
+        .menu-section .navbar-nav li a {
+            cursor:pointer;
         }
         .navbar-inverse
           .navbar-nav

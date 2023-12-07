@@ -1589,7 +1589,7 @@ footer .innerFooter .boxFooter .listAddress li .linkFoot .txt {
 
 /*------------------ START MEDIA QUERIES RESPONSIVE ------------------*/
 @media (min-width: 992px) {
-    .mob_ad_details_section{
+    .mob_ad_details_section,.mob_cta_block{
         display: none !important    ;
     }
     .desktop_productcontent ,.old_desktop_productcontent{

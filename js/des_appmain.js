@@ -59,11 +59,11 @@ $(document).ready(function () {
     });
 
     $(function () {
-       if ($(window).width() >992 ) {
-         $(window).on("load", function () {
-            $(".custom_content_scrollbar").mCustomScrollbar();
-        });
-       }
+       // if ($(window).width() >992 ) {
+         // $(window).on("load", function () {
+            // $(".custom_content_scrollbar").mCustomScrollbar();
+        // });
+       // }
        
     });
 
@@ -201,12 +201,7 @@ $(document).ready(function () {
 
 });
 
-function fireclosesearch() {
-    var a = $(".global-search-input .right-heder-search-input").val().length;
-    if (a == 0) {
-        hideSearch()
-    }
-}
+
 function hideSearch() {
     $(".right-heder-search-input").val();
     $(".right-heder-search-input").removeClass('open');
@@ -415,9 +410,7 @@ $(document).ready(function () {
             $("#slide-nav .navbar-toggle").trigger("click");
     });
 
-    $(".right-heder-search-input").on("blur", function (k) {
-        fireclosesearch()
-    });
+
     $(".search-cross-dark").on("click", function (k) {
         $("input.right-heder-search-input").val("");
         hideSearch()
@@ -429,16 +422,14 @@ $(document).ready(function () {
     });
 
 
-    $(window).resize(function () {
-        var search_len = $(".right-heder-search-input").val().length;
-        if (search_len > 0)
-            $('.menu-container').addClass('searched');
-    });
+    // $(window).resize(function () {
+        // var search_len = $(".right-heder-search-input").val().length;
+        // if (search_len > 0)
+            // $('.menu-container').addClass('searched');
+    // });
 });
 
-$(document).click(function () {
-    fireclosesearch()
-});
+
 $(".search-cross-dark").on("click", function (k) {
     $("input.right-heder-search-input").val("");
     hideSearch()

@@ -699,15 +699,11 @@ ul.left-submenu li.hovered a {
         #header ul li .servicemenu::before, #header ul li .softwaremenu::before {
             color: #333;
             display: inline-block;
-            font-size: 14px
+            font-size: 12px
         }
 
         #header ul li .servicemenu::before {
-            content: "POWER TOOLS"
-        }
-
-        #header ul li .softwaremenu::before {
-            content: "HAND TOOLS"
+            content: "Products"
         }
 
     #header ul li.active .servicemenu::before, #header ul li.active .softwaremenu::before {
@@ -31333,13 +31329,13 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       .navbar-inverse .navbar-nav > li > a {
         position: relative;
         color: #333 !important;
-        padding: 10px 15px;
+        padding: 8px 15px;
         text-decoration: none;
         display: flex;
         align-items: center;
         justify-content: center;
         line-height:normal;
-        font-size: 14px;
+        font-size: 12px;
         text-transform:uppercase;
         border-radius:0 !important;
       }

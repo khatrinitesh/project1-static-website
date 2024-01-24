@@ -2,28 +2,28 @@ $(document).ready(function(){
     'use strict';
 
     // START SECTION >> TRENDING SLIDER
-    // $(function(){
-        // var swiper = new Swiper(".trending_slider", {
-            // slidesPerView: 3,
-            // spaceBetween: 30,
-            // loop: true,
-            // navigation: {
-              // nextEl: ".swiper-button-next",
-              // prevEl: ".swiper-button-prev",
-            // },
-            // breakpoints: {
-                // 320: {
-                  // slidesPerView: 1.5
-                // },
-                // 991: {
-                  // slidesPerView: 2
-                // },
-                // 992: {
-                  // slidesPerView: 3
-                // }
-              // }
-        // });
-    // });
+    $(function(){
+        var swiper = new Swiper(".trending_slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                  slidesPerView: 1
+                },
+                991: {
+                  slidesPerView: 2
+                },
+                992: {
+                  slidesPerView: 4
+                }
+              }
+        });
+    });
 
     // $(function(){
                 // const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
@@ -83,7 +83,7 @@ $(document).ready(function(){
             adaptiveHeight: true,
             arrows: true,
             autoplaySpeed: 5000,
-            autoplay: true
+            autoplay: false
         });
     });
     // END SECTION >> BANNER
@@ -117,4 +117,43 @@ $(document).ready(function(){
         });
     });
     // END SECTION >> CUSTOMER TESTIMONIALS
+
+    // START SECTION >> TRENDING
+    $(function(){
+        $('#slideshowTrends').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            adaptiveHeight: true,
+            arrows: true,
+            autoplaySpeed: 5000,
+            autoplay: true,
+            responsive: [
+                { 
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                { 
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        arrow:false,
+                        dots:true
+                    },
+                },
+                { 
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        arrow:false,
+                        dots:true
+                    },
+                }
+            ]
+        });
+    });
+    // END SECTION >> TRENDING
 });

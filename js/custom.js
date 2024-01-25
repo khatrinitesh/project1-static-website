@@ -24,30 +24,6 @@ $(document).ready(function(){
               }
         });
     });
-
-    $(function(){
-        
-        var swiper = new Swiper("#trending_slider2", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                320: {
-                  slidesPerView: 1
-                },
-                991: {
-                  slidesPerView: 2
-                },
-                992: {
-                  slidesPerView: 4
-                }
-              }
-        });
-    });
     // $(function(){
                 // const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
                     // // задаем параметры

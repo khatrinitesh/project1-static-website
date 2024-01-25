@@ -660,32 +660,35 @@ body {
 
 /*------------------ END SECTION >> CUSTOMER TESTIMONIALS  ------------------*/
 
+
+.textBreadcrumb{
+    color: var(--blackcolor);
+    font-size: var(--fs_12);
+    display: inline-block;
+    font-family: var(--ff_monsterrat);
+}
+
+.listBreadcrumbs li .fa{
+    font-size: var(--fs_10);
+}
+
 /* START BREADCRUMBS */
 .listBreadcrumbs li {
     position: relative;
+    font-size: var(--fs_12);
+    color:var(--blackcolor)
 }
 
 .listBreadcrumbs li:not(:last-child) {
     margin: 0 10px 0 0;
 }
 
-.listBreadcrumbs li:not(:last-child):after {
-    content: "/";
-    position: absolute;
-    top: 2px;
-    right: -5px;
-    font-size: 10px;
-}
-
 .listBreadcrumbs li a {
-    color: var(--greycolor2);
-    font-size: var(--fs_13);
+    color: var(--blackcolor);
+    font-size: var(--fs_12);
+    font-weight: var(--fw_semibold);
     padding: 0 10px 0 0;
     display: block;
-}
-
-.listBreadcrumbs li a.active {
-    font-weight: var(--fw_semibold)
 }
 
 /* END BREADCRUMBS */
@@ -1871,4 +1874,101 @@ footer .innerFooter .boxFooter .listAddress li .linkFoot .txt {
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+
+.locatorBlock{
+    background: linear-gradient(90deg, rgba(253,207,41,1) 0%, rgba(251,195,42,1) 20%, rgba(243,88,52,1) 60%, rgba(231,68,53,1) 92%);
+    padding:30px 0;
+}
+.locatorBlock .headTitle{
+    color:var(--whitecolor);
+    font-family: var(--ff_monsterrat);
+    font-size: var(--fs_20);
+    margin:0 0 20px !important;
+}
+
+.locatorBlock .searchBar .box{
+    position: relative;
+}
+
+.locatorBlock .searchBar .box .fieldControl{
+    background-color: transparent;
+    border:0;
+    border-bottom: 1px solid var(--blackcolor);
+    width: 100%;
+    height: 40px;
+    padding:0 30px 0 10px;
+    color:var(--whitecolor);
+    font-size: var(--fs_14);
+    font-family: var(--ff_monsterrat);
+    font-weight: var(--fw_semibold);
+    text-transform: uppercase;
+}
+
+.locatorBlock .searchBar .box .fa{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:0;
+    color:var(--blackcolor);
+    cursor: pointer;
+}
+
+.addressBlock{
+    padding:50px 0;
+}
+
+.addressBlock .boxAddress{
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 10px 0 rgba(0,0,0,.1);
+    padding: 10px;
+    margin:0 0 30px;
+}
+
+.addressBlock .boxAddress .headBlock {
+    border-bottom: 2px solid #ccc;
+    padding:0 0 10px;
+    margin:0 0 10px;
+}
+.addressBlock .boxAddress .headBlock .fa{
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addressBlock .boxAddress .headBlock .txtHead{
+    width: calc(100% - 8%);
+}
+
+.addressBlock .boxAddress .headBlock .txtHead{
+    font-size: var(--fs_18);
+    font-family: var(--ff_monsterrat);
+    font-weight: var(--fw_medium);
+    color:var(--blackcolor)
+}
+
+.addressBlock .bodyBlock .listAddress li{
+    display: flex;
+}
+
+.addressBlock .bodyBlock .listAddress li:not(:last-child){
+    margin:0 0 10px;
+}
+
+.addressBlock .bodyBlock .listAddress li .fa{
+    width: 10%;
+    float: left;
+    position: relative;
+    top:8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.addressBlock .bodyBlock .listAddress li .txtDesc{
+    width: calc(100%-10%);
+    font-size: var(--fs_14);
+    font-family: var(--ff_monsterrat);
+    font-weight: var(--fw_medium);
+    color:var(--blackcolor)
 }

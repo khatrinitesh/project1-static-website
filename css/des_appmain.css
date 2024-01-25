@@ -31325,6 +31325,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       #header ul.navbar-nav {
         margin: 0;
         flex-direction:row;
+        background: #f8f8f8;
       }
       .navbar-inverse .navbar-nav > li > a {
         position: relative;
